@@ -1,3 +1,12 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	overflow: hidden;
+}
+
 input[type=range]{
     /* fix for FF unable to apply focus style bug  */
     border: 1px solid white; 
@@ -19,7 +28,7 @@ input[type=range]::-moz-range-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: rgb(63, 96, 136);
 }
 
 /*hide the outline behind the border*/
@@ -30,6 +39,10 @@ input[type=range]:-moz-focusring{
 
 input[type=range]:focus::-moz-range-track {
     background: #ccc;
+}
+
+input[type=range]::-moz-range-progress{
+    background: #a9a9a9;
 }
 
 input[type=range]{
@@ -50,7 +63,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: rgb(63, 96, 136);
     margin-top: -4px;
 }
 
@@ -89,7 +102,7 @@ input[type=range]::-ms-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: rgb(63, 96, 136);
 }
 input[type=range]:focus::-ms-fill-lower {
     background: #888;
